@@ -47,7 +47,7 @@ const ChatHeader = () => {
       </div>
       <div className="user-box">
         <Button shape="round" icon={<UserAddOutlined />} onClick={handleInviteUserModal}>
-          Mời
+          追加⁺
         </Button>
         <Avatar.Group maxCount={3}>
           {users.map((user) => (

@@ -133,7 +133,7 @@ const ChatBox = () => {
               }
               suffix={
                 <Button type="primary" onClick={handleSendMessage}>
-                  Gửi
+                  送る
                 </Button>
               }
             ></Input>

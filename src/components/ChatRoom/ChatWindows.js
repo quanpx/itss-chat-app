@@ -20,7 +20,7 @@ const ChatWindows = () => {
             <ChatBox />
         </>
       ) : (
-        <Alert message="Hãy chọn phòng!!" type="info" closable showIcon></Alert>
+        <Alert message="ルームを選びなさい!!" type="info" closable showIcon></Alert>
       )}
     </ChatWindowsStyled>
   );
