@@ -41,8 +41,6 @@ const ChatBox = () => {
   const [form] = Form.useForm();
   const { selectedRoomId } = useContext(AppContext);
   const { displayName, photoURL, uid } = useContext(AuthContext);
-  const messages = useFirestore("message", condition);
-
 
   const inputRef = useRef();
   const messageListRef = useRef();
@@ -85,6 +83,8 @@ const ChatBox = () => {
     const message = form.getFieldValue(["message"]) ?? "";
     form.setFieldsValue({ message: message + e.native });
   }
+
+  const messages = useFirestore("message", condition);
 
   useEffect(() => {
     messageListRef.current.scrollTop = messageListRef.current.scrollHeight + 50;
